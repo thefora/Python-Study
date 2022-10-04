@@ -24,3 +24,25 @@
 # N x M 리스트 초기화2 (각 요소에 1 ~ N x M 의 값을 순차적으로 할당)
 [[1 + j + i * M for j in range(M)] for i in range(N)]
 ```
+
+<br/><br/><br/>
+## Lambda Fucntion
+<br>
+
+> 람다 함수(Lambda Fucntion)란 Python에서 사용되는 익명의 함수이다. <br/>
+> 함수를 간단하게 작성할 수 있다.
+
+```python
+x = lambda a: a + 10
+# 함수 이름 : x
+# 매개변수 : a
+# 반환 값 : a + 10
+
+x(1)
+# 11
+
+# 람다 함수를 인수로 사용하는 예시
+list(map(lambda x: x + 10, [1, 2, 3]))
+# [11, 12, 13]
+
+```
