@@ -74,3 +74,45 @@ result = list(filter(lambda x : x > 3 and x < 9, list_))
 # [8, 4, 7, 8] : boolean 값이 True 라면 반환
 
 ```
+
+<br/><br/><br/>
+## bissect
+<br>
+
+> 이진검색 모듈. <br/>
+> bisect_left() : 해당 값의 첫번째 인덱스를 반환
+> bisect_left() : 해당 값의 마지막 인덱스의 다음 값의 인덱스를 반환
+
+```python
+from bisect import bisect_left, bisect_right
+
+nums = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+n = 7
+print(bisect_left(nums, n))
+# 7
+print(bisect_right(nums, n)) 
+# 8
+
+nums = [3, 4, 4, 5, 5, 5, 6, 6, 6, 6, 7]
+
+n = 4
+print(bisect_left(nums, n))
+# 1
+print(bisect_right(nums, n))
+# 3
+
+n = 5
+print(bisect_left(nums, n))
+# 3
+print(bisect_right(nums, n))
+# 6
+
+n = 6
+print(bisect_left(nums, n))
+# 6
+print(bisect_right(nums, n))
+# 10
+
+# bisect_right() - bisect_left() : 해당 원소의 개수를 나타낸다.
+
+```
