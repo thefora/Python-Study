@@ -79,8 +79,8 @@ result = list(filter(lambda x : x > 3 and x < 9, list_))
 ## bissect
 <br>
 
-> 이진검색 모듈. <br/>
-> bisect_left() : 해당 값의 첫번째 인덱스를 반환
+> 이진검색 모듈 <br/>
+> bisect_left() : 해당 값의 첫번째 인덱스를 반환 <br/>
 > bisect_left() : 해당 값의 마지막 인덱스의 다음 값의 인덱스를 반환
 
 ```python
