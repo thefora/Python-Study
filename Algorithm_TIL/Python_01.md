@@ -76,7 +76,7 @@ result = list(filter(lambda x : x > 3 and x < 9, list_))
 ```
 
 <br/><br/><br/>
-## bissect
+## Bissect
 <br>
 
 > 이진검색 모듈 <br/>
@@ -114,5 +114,26 @@ print(bisect_right(nums, n))
 # 10
 
 # bisect_right() - bisect_left() : 해당 원소의 개수를 나타낸다.
+
+```
+
+<br/><br/><br/>
+## eval()
+<br>
+
+> 문자열로 이루어진 수식을 계산해주는 함수 <br/>
+> abs()와 같은 함수 또한 문자열로 작성돼있어도 계산이 가능하다.
+
+```python
+s = "['a', 1, 2, '34']"
+
+eval(s)
+# ['a', 1, 2, '34']
+
+eval("1+2")
+# 3
+
+eval("abs(-8"))
+# 8
 
 ```
