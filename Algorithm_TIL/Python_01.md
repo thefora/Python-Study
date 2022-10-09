@@ -137,3 +137,37 @@ eval("abs(-8"))
 # 8
 
 ```
+
+<br/><br/><br/>
+## any(), all()
+<br>
+
+> any() : 인자로 받은 반복가능한 자료형(iterable)중 하나의 요소라도 참이면 True를 반환, 모든 요소가 거짓인 경우에 False를 반환하는 함수<br/>
+> all() : 인자로 받은 반복 가능한 자료형(iterable)의 모든 요소가 참이면 True를, 모든 요소가 참이 아니라면 False를 반환하는 함수
+
+```python
+any([False, False, False]) 
+# False
+
+any([False, True, False]) 
+# True
+
+all([False, True, False]) 
+# False
+
+all([True, True, True]) 
+# True
+
+n1 = [1,2,3,4,5]
+n = 3
+all(n < i for i in n1) 
+# False
+any(n < i for i in n1) 
+# True
+
+n2 = [5,5,5]
+n = 5 
+all(n == i for i in n2) # True
+any(n != i for i in n2) # False
+
+```
