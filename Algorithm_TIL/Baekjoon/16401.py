@@ -5,7 +5,7 @@ M, N = map(int, input().split())
 snacks = list(map(int, input().split()))
 
 start = 1
-end = int(1e9)
+end = max(snacks)
 result = 0
 
 while start <= end:
@@ -16,7 +16,7 @@ while start <= end:
         cnt += i//mid
     
     if cnt >= M:
-        result = max(result, mid)
+        result = mid
         start = mid + 1
     
     else:
